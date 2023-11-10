@@ -1,68 +1,85 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# System requirements
+           
+#### Operating System: 
+- Windows 10 64-bit
+  
+#### CPU: 
+- Model: VivoBook_ASUSLaptop X513EAN_K513EA
+- Number of cores: Four
+- Clock Speed: Base Speed 2.80 GHz and Speed 3200 MHz
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+#### RAM:
+- 15.7 GB
 
-## Step 1: Start the Metro Server
+# Installation instructions
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### First: Installing Node.js
 
-To start Metro, run the following command from the _root_ of your React Native project:
+1. Install Node LTS and choose Windows Installer. [Node.js Download Link](https://nodejs.org/en/download/ "Node.js download link website")
+2. Run the Node.js installer. Follow the installation wizard, accepting the default settings unless you have specific preferences.
+3. After the installation, open Command Prompt.
+4. In the terminal, type "node -v" (without the quotations) and check the version numbers.
+5. You have successfully installed Node.js!
+- If you are having trouble installing or encounter errors, click here for [Troubleshoot](#Troubleshooting "Goto Troubleshoot")
 
-```bash
-# using npm
-npm start
 
-# OR using Yarn
-yarn start
-```
+### Second: Installing Android Studio and Configuration steps
 
-## Step 2: Start your Application
+1. Download Andriod Studio [Android Studio Download Link](https://developer.android.com/studio "Android Studio download link website")
+2. Run Android Studio Setup.
+3. Leave Android Studio and Android Virtual Device checked. 
+4. Leave the installation for the location as it is.
+5. Once the download is finished, a page saying "Welcome Android Studio" will pop up. This is where you set the environment for Android Studio.
+6. The type of setup should be on Standard.
+7. Select a UI Theme for what Android Studio would like.
+8. Make sure these five things are selected:
+- Android SDK
+- Android API 34
+- Performance (Intel HAXM)
+- Performance (Android Emulator hypervisor driver)
+- Android Virtual Device
+9. Accept the Licence Agreements.
+10. On the next page, it will start downloading and installing.
+11. Once the installation has finished, click on "More Action".
+12. Select SDK Manager.
+13. In the tab SDC Platform, make sure "Android API 34" is selected.
+14. After that, exit out of Android Studio.
+15. For React Native to work, you must open "Windows Control Panel."
+16. Click "User Accounts" and "User Accounts" again.
+17. Click on Change my environment variables.
+18. Click on New... to create new user variable.
+19. In Variable Name type "ANDROID_HOME" and Variable value type the location of where Android\SDK.
+- You can check the location by opening Android Studio app. Click "More Action" then SDK Manager. At the top of the page, it says "Android SDK Location." This is the location of the SDK installed.
+20. After typing the information, press okay. Then scroll down in that same location where you typed ANDROID_HOME and find "Path."
+21. Click "Path" then edit. A window will come up.
+22. Click browse and find the path where you installed Android and look for "platform-tools." Then click ok and ok again.
+23. You successfully installed Android Studio and set up React Native!
+  
+- If you are having trouble installing or encounter errors, click here for [Troubleshoot](#Troubleshooting "Goto Troubleshoot")
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+# Project Creation
+1. Click the windows button + r
+2. Search for "cmd"
+3. In the command line, type this "npx react-native@latest init Incredible" hit enter.
+4. Afterwards, it will ask you, "Need to install the following package:" at the bottom of that, it will ask you, "Ok to proceed? (y)." Press y.
+5. Wait for a few minutes until it's done creating the project.
+6. You have successfully created a project!
+- Note: If you want to change a TypeScript file for JavaScript, you can rename the specific file. For example, this code had a file called App.tsx. You would rename this to App.jsx and delete the redlines in the code. And thats it. You have changed the file to a jsx.  
+   
+# Running the Project
+1. Open Android Studio.
+2. Click Open.
+3. Choose the location where the project was created.
+4. At the top of the page there is a tab called "Build." Click on it and click on "Make project".
+5. Wait until the app is done building.
+6. It should say "build sucessful." After that go to the top of the page under "Run" click "Run This."
+7. Once the Emulator runs the app there will be an error "Unable to load script." Go to the command line and type "npm run start" (without the quotations)
+8. Then press r.
+9. Once its done loading there will be a new page called "Welcome to React Native."
+10. You have successfully ran a project!
 
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
 # Troubleshooting
 
