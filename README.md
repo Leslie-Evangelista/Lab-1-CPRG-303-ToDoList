@@ -62,7 +62,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 # Project Creation
 1. Click the windows button + r
 2. Search for "cmd"
-3. In the command line, type this "npx react-native@latest init Incredible" hit enter.
+3. In the command line, type this "npx react-native@latest init ToDoList" hit enter.
 4. Afterwards, it will ask you, "Need to install the following package:" at the bottom of that, it will ask you, "Ok to proceed? (y)." Press y.
 5. Wait for a few minutes until it's done creating the project.
 6. You have successfully created a project!
